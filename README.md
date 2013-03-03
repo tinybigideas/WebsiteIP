@@ -25,3 +25,8 @@ FUTURE
 =========
 
 Currently I'm planning a few features: 'Copy IP to clickboard' - This will be available from the popup options in the next version and the ability to disable on certain websites.
+
+MORE
+=========
+
+More available here: http://tinybigideas.com/browser-extensions/website-ip/
