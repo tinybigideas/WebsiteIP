@@ -1,0 +1,28 @@
+body {
+	background-color:#ebeff9;
+	font-family:arial,sans-serif;
+	font-size:13px;
+}
+
+#content {
+	margin:0 auto;
+	width:100px;
+}
+
+input {
+	height:40px;
+	width:100px;
+	margin-bottom:10px;
+}
+
+div.tbi {text-align:center}
+	div.tbi a {
+		font-size: 13px;
+		color: #CCC;
+		margin-top: 10px;
+		text-decoration: none;
+	}
+		div.tbi a:hover {border-bottom:1px dashed #CCC; padding-bottom: 2px;}
+		div.tbi a span.small {font-size: 8px;}
+
+#chrome_websiteIP {display:none !important;}
