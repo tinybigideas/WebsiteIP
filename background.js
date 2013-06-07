@@ -23,11 +23,18 @@ function getItem(key) {
 	return value;
 }
 
+// Extract domain name (DN) from URL
+function url2dn (url) {
+	var tmpa = document.createElement('a');
+	tmpa.href = url;
+	return tmpa.host;
+}
+
 // get IP using webRequest
 var currentIPList	= {};
 chrome.webRequest.onCompleted.addListener(
   function(info) {
-	  currentIPList[ info.url ] = info.ip;
+	  currentIPList[ url2dn(info.url) ] = info.ip;
 	return;
   },
   {
@@ -58,10 +65,10 @@ chrome.extension.onMessage.addListener(
 			break;
 		
 		case "getIP":
-			var currentURL = sender.tab.url;
-			if (currentIPList[currentURL] !== undefined) {
+			var currentDN = url2dn(sender.tab.url);
+			if (currentIPList[currentDN] !== undefined) {
 				sendResponse({
-					domainToIP: currentIPList[currentURL]
+					domainToIP: currentIPList[currentDN]
 				});
 			} else {
 				sendResponse({
