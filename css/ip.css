@@ -18,6 +18,7 @@
 	-webkit-touch-callout: none; 
 	-webkit-user-select: none; 
 	user-select: none;
+	max-height: 25px;
 }
 
 .chrome_websiteIP_right {
