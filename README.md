@@ -5,7 +5,7 @@ Chrome extension which simply adds the IP of the current website you are viewing
 
 I created this extension to solve a problem no other IP extension attempted. To quickly show the current websites IP at all times.
 
-I use that information daily as a web developer and it has solved my problem. No longer do I have to click through an extension to see the IP, it's just there - bottom right.
+I use that information daily as a web developer and it has solved my problem. No longer do I have to click through an extension to see the IP, it's just there - bottom right. this is not available for more longer time.
 
 FEATURES
 =========
